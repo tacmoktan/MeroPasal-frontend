@@ -1,0 +1,14 @@
+/* btns */
+.btn{
+    border-style:none;
+    background:darkred;
+    color:rgba(255, 255, 255, 0.842);
+    padding:5px;
+    border-radius:2px;
+    cursor:pointer;
+    transition:0.4s ease;
+    outline:none;
+}
+.btn:hover{
+    background:rgb(216, 9, 9);
+}

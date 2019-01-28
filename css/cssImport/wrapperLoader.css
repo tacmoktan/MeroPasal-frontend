@@ -1,0 +1,18 @@
+#wrapper{
+    display:none;
+}
+#loader{
+    position:absolute;
+    top:50%;
+    right:50%;
+    border-radius:50%;
+    border:10px solid rgba(0, 0, 0, 0.425);
+    border-top:10px solid rgba(0, 255, 242, 0.658); /* this overrides the border-top color */
+    width:20px;
+    height:20px;
+    animation:spin 2s linear infinite;
+}
+@keyframes spin{
+    0%{ transform:rotate(0deg);}
+    100%{transform:rotate(360deg);}
+}

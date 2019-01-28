@@ -1,0 +1,86 @@
+/* searchbox styles */
+
+#bar{
+    display:grid;
+    grid-template-columns:30% 70%;
+    grid-column-gap: 10px;
+    justify-content:space-around;
+    padding:5px;
+    background:rgba(255, 255, 255, 0.548);
+    /* border:2px solid yellow; */
+}
+.barleft{
+    /* border:1px solid black; */
+    min-width:116px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+#logo-link{
+    display:flex;
+}
+#logoMeroPasal{
+    width:50px;
+    height:50px;
+    size:50px;
+}
+.barright{
+    display:flex;
+    /* border:1px solid black; */
+    padding:0 15px;
+}
+.bar-heading{
+    /* border:2px solid green; */
+    text-align:center;
+}
+.search-form{
+    display: flex;
+    align-items: center;
+    /* border: 1px solid green; */
+    height: 6vh;
+}
+
+#searchBox{
+    background:rgba(255, 255, 255, 0.801);
+    width:30vw;
+    min-width:140px;
+    height: 10px;
+    padding:10px 20px 10px 10px;
+    border: 1px solid #DDDDDD;
+    border-radius:10px;
+    outline:none;
+    transition:0.5s ease;
+}
+#searchBox:focus{
+    border-color:rgba(81, 203, 238, 1);
+    box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+}
+
+#searchbtn{
+    height:28px;
+    border-style:none;
+    cursor:pointer;
+    /* border:1px solid black; */
+}
+#searchbtn i{
+    font-size:20px;
+    margin-left:-25px;
+}
+#viewCartItems{
+    /* border:1px solid black; */
+    margin-left:10px;
+    display:flex;
+    align-items: center;
+}
+
+#viewCartItems-link i{
+    font-size:30px;
+}
+
+#cartItemQuantity{
+    background:rgba(0, 0, 0, 0.651);
+    color:white;
+    /* border:1px solid red; */
+    border-radius:50%;
+    font-size:10px;
+}

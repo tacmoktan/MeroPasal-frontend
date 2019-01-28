@@ -1,0 +1,143 @@
+
+#slideshow-container{
+    display:grid;
+    justify-content: center;
+    margin:10px 0 0 0;
+    
+   /*  border:5px solid green; */
+}
+.carousel{ /* NOTICE: carousel & slides have same width */
+    display:flex;
+    position: relative;
+    /* border:5px solid yellow; */
+    width:50vw;
+    overflow:hidden;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.705);
+}
+.carousel,.slides{
+    min-width:550px;
+}
+#gallery-slides{
+    display:flex;
+}
+.slides{
+    width:50vw;
+    height:50vh;
+}
+
+/*gallery animation styling  */
+
+/* currentPos =1, slideIndex=0, animation from second slide to first slide */
+@keyframes slide1{
+    0%{transform:translateX(-25%)}
+    100%{transform:translateX(0%)}
+}
+/* slideleft, moving 25% left */
+@keyframes slideL1{ 
+    0%{transform:translateX(0%)}
+    100%{transform:translateX(-25%)}
+}
+@keyframes slideL2{ 
+    0%{transform:translateX(-25%)}
+    100%{transform:translateX(-50%)}
+}
+@keyframes slideL3{ 
+    0%{transform:translateX(-50%)}
+    100%{transform:translateX(-75%)}
+}
+
+/* currentPos=0 , slideIndex=3, moving from first slide to last(4th index) slide */
+@keyframes slideL0{ 
+    0%{transform:translateX(0%)}
+    100%{transform:translateX(-75%)}
+}
+
+ /* currentPos = 3 slideIndex=0, moving from last slide to first(0th index) slide  */
+@keyframes slideR0{ 
+    0%{transform:translateX(-75%)}
+    100%{transform:translateX(0%)}
+}
+
+/* slideright, moving 25% right */
+@keyframes slideR1{ 
+    0%{transform:translateX(-50%)}
+    100%{transform:translateX(-25%)}
+}
+@keyframes slideR2{ 
+    0%{transform:translateX(-75%)}
+    100%{transform:translateX(-50%)}
+}
+@keyframes slideR3{
+    0%{transform:translateX(-100%)}
+    100%{transform:translateX(-75%)}
+}
+/* gallery animation styling  */
+
+
+.direction-container{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    /* border: 1px solid black; */
+    position: absolute;
+    top: 21vh;
+
+}
+
+.direction{
+    display: flex;
+    font-size: 30px;
+    padding: 0 12px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.459);
+    color: rgba(255, 255, 255, 0.747);
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s;
+    
+}
+.direction:hover{
+    background:rgba(0, 0, 0, 0.712);
+    color:rgba(255, 255, 255, 0.911);
+}
+
+/* dots */
+.controls{
+    display: grid;
+    grid-template-columns: 10px 10px 10px 10px;
+    grid-column-gap: 20px;
+    justify-content: center;
+    /* border: 2px solid grey; */
+    padding:10px;
+}
+
+.dots{
+    border: 6px solid rgba(0, 0, 0, 0.329);
+    border-radius: 50%;
+    transition:0.8s ease;
+}
+.dots.active{
+    border-color:rgba(0, 0, 0, 0.733);
+}
+
+
+@media(max-width:650px){
+    .carousel,.slides{
+        width:80vw;
+        min-width:300px;
+    }
+}
+
+@media(max-width:550px){
+    .carousel,.slides{
+        width:300px;
+        height:200px;
+    }
+    .direction-container{
+        top:85px;
+    }
+    .direction{
+        font-size:20px;
+        padding:0px 7px;
+    }
+}

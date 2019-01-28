@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Contact - mero pasal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- favicon -->
+  <link rel="shortcut icon" type="image/x-icon" href="./images/favicon/favicon.ico" />
+  <!-- external css -->
+  <link rel="stylesheet" type="text/css" media="screen" href="./css/contact.css" />
+  <!-- font awesome icons -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+    crossorigin="anonymous" />
+</head>
+
+<body>
+  <div id="wrapper">
+    <header id="header">
+      <!-- navbar -->
+      <nav id="navbar">
+        <div class="left">
+          <a href="index.html" class="nav-link">
+            <i class="fa  fa-home"></i> Home</a>
+          <a href="viewCartPage.html" class="nav-link">
+            <i class="fa fa-cart-plus"></i> View Cart 
+          </a>
+          <a href="#" class="nav-link active">
+            <i class="fa fa-phone"> </i> Contact</a>
+        </div>
+        <div class="right">
+          <a href="login.html" class="nav-link">
+            <i class="fas fa-key"></i> Login</a>
+          <a href="registration.html" class="nav-link">
+            <i class="fas fa-user"></i> Registration</a>
+        </div>
+      </nav>
+    </header>
+
+    <section id="container">
+
+      <section class="sectionform">
+        <h1 class="form-heading">Contact us</h1>
+        <form id="form" action="#">
+          <div class="form-div">
+            <label for="usernameTextBox" class="formleft">Name*</label>
+            <input type="text" id="usernameTextBox" class="formright" maxlength="30" pattern="[A-Za-z]+" title="no numbers or special characters"
+              autofocus required/>
+          </div>
+
+          <div class="form-div">
+            <label for="emailTextBox" class="formleft">Email*</label>
+            <input type="email" id="emailTextBox" class="formright" maxlength="30" pattern="[^ ]+@gmail.com" title="Enter your email"
+              placeholder="@gmail.com" required/>
+          </div>
+
+          <div class="form-div">
+            <label for="phoneTextBox" class="formleft">Phone</label>
+            <input type="text" id="phoneTextBox" class="formright" title="fill 10 numbers" pattern="[0-9]{10}" />
+          </div>
+
+          <div class="form-div">
+            <label for="messageTextBox" class="formleft">Message</label>
+            <textarea class="formright" id="messageTextBox" maxlength="1000" title="Enter your message"></textarea>
+          </div>
+
+          <div class="form-div">
+            <div></div>
+            <!-- too occupy spaces created by form-div grid 15%-->
+            <div>
+              <input type="submit" class="btn" id="contactSubmit" onclick="submit_clicked()" />
+              <span id="messageDisplay"></span>
+            </div>
+          </div>
+
+        </form>
+      </section>
+
+      <section id="map" class="sectionform">
+        <h1 id="map-heading">Visit us:</h1>
+        <iframe id="mapbox" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3531.9298272810306!2d85.35662123868092!3d27.71945281899909!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb185704344307%3A0xc954de76489e8d98!2sBouddha+Stupa!5e0!3m2!1sen!2snp!4v1541991548341"
+          frameborder="0" style="border:0" allowfullscreen></iframe>
+      </section>
+
+    </section>
+    <footer id="footer">
+      <div class="footer-items">
+        <div>
+          <h3 class="footer-head">Customer Services</h3>
+          <p>
+            <a href="#" target="_blank" class="footer-link">Contact us</a>
+          </p>
+          <p>
+            <a href="#" target="_blank" class="footer-link">Report Abuse</a>
+          </p>
+        </div>
+        <div>
+          <h3 class="footer-head">About Us</h3>
+          <p>
+            <a href="#" target="_blank" class="footer-link">About MeroPasal.com</a>
+          </p>
+        </div>
+        <div>
+          <h3 class="footer-head">Follow us on</h3>
+          <div class="social-medias">
+            <a href="https://www.facebook.com" target="_blank" class="social-medias-link">
+              <i class="fab fa-facebook-square"></i>
+            </a>
+            <a href="https://twitter.com" target="_blank" class="social-medias-link">
+              <i class="fab fa-twitter-square"></i>
+            </a>
+            <a href="https://www.youtube.com" target="_blank" class="social-medias-link">
+              <i class="fab fa-youtube-square"></i>
+            </a>
+            <a href="https://www.instagram.com" target="_blank" class="social-medias-link">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="copyrightMessage">
+        &COPY; 2018 MeroPasal.com All rights reserved
+      </div>
+    </footer>
+  </div>
+
+ <!--  <div id="loader"></div> -->
+
+<!--adding  script type="module" causes UncaughtReference error-->
+  <script src="./js/contact.js" >
+  </script>
+</body>
+
+</html>

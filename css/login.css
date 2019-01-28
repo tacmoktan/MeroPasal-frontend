@@ -1,0 +1,69 @@
+/* @import 'cssImport/wrapperLoader.css'; */
+
+@import 'cssImport/nav.css';
+@import 'cssImport/btn.css';
+@import 'cssImport/footer.css';
+@import 'cssImport/form.css';
+
+
+#container{
+    margin:80px 0 151px 0;
+}
+.form-heading{
+    width:42vw;
+    text-align:left;
+    text-decoration:none;
+}
+.form-heading a{
+    text-decoration:none;
+}
+.form-heading a i{
+    font-size:30px;
+}
+.sectionform{
+    margin:0;
+    width:80vw;
+    /* border:2px solid orange; */
+}
+.form-div{width:95%;}
+
+.formleft{border-style:none;}
+
+.formright{width:20vw;}
+
+#forgotpassword-div{
+    width: 20vw;
+    min-width: 250px;
+    text-align: right;
+    /* border: 1px solid blac */
+}
+
+#forgotpasswordLink{
+    text-decoration:none;
+}
+#forgotpasswordLink:hover{
+    text-decoration: underline;
+}
+
+#loginbtn{
+    width:70px;
+    font-size:18px;
+}
+
+#loginBtn-div,#rememberMe{
+    display:flex;
+    min-width: 200px;
+}
+
+#checkboxRememberMe{
+    margin:5px 0 0 10px;
+}
+
+@media(max-width:650px){
+    #forgotpassword-div,#rememberMe{
+        margin: 18px 0;
+    }
+    .form-heading{
+        width:auto;
+    }
+}

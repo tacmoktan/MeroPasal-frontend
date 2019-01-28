@@ -1,0 +1,42 @@
+/* @import 'cssImport/wrapperLoader.css'; */
+
+@import 'cssImport/nav.css';
+@import 'cssImport/btn.css';
+@import 'cssImport/itemsWrapper.css';
+@import 'cssImport/footer.css';
+
+#belowHeader{
+    display:grid;
+    justify-items: center;
+}
+
+.cartHeader{
+    background:rgba(0, 0, 0, 0.493);
+    color:rgba(255, 255, 255, 0.842);
+    padding:10px;
+    margin:10px;
+    border-radius:10px;
+    box-shadow:0 0 20px rgba(0, 0, 0, 0.493);
+}
+
+.startShopping{
+    display:flex;
+    justify-content: center;
+}
+.startShopping-link{
+    text-decoration:none;
+    font-size:20px;
+}
+.startShopping-link:hover{
+    text-decoration:underline;
+}
+
+/* additional styling to items  */
+.itemsWrapper{
+    min-height:59.4vh;
+}
+
+.items{
+    height:182px;
+}
+

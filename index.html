@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Mero Pasal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- favicon -->
+  <link rel="shortcut icon" type="image/x-icon" href="./images/favicon/favicon.ico" />
+  <!-- external css -->
+  <link rel="stylesheet" type="text/css" media="screen" href="./css/index.css" />
+  <!-- font awesome icons -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+    crossorigin="anonymous" />
+
+</head>
+
+<body>
+  <div id="wrapper">
+
+    <header id="header">
+      <!-- navbar -->
+      <nav id="navbar">
+        <div class="left">
+          <a href="#" class="nav-link" onclick="active_click(0)">
+            <i class="fa  fa-home"></i> Home</a>
+          <a href="viewCartPage.html" class="nav-link" onclick="return active_click(1)">
+            <i class="fa fa-cart-plus"></i> View Cart 
+          </a>
+          <a href="contact.html" class="nav-link" onclick="return active_click(2)" > 
+            <i class="fa fa-phone"> </i> Contact</a>
+        </div>
+        <div class="right">
+          <a href="login.html" class="nav-link" onclick="return active_click(3)">
+            <i class="fas fa-key"></i> Login</a>
+          <a href="registration.html" class="nav-link" onclick="return active_click(4)">
+            <i class="fas fa-user"></i> Registration</a>
+        </div>
+      </nav>
+      <!-- navbar -->
+      <section id="bar">
+        <div class="barleft">
+          <a href="#" id="logo-link">
+            <img src="./images/logo/MeroPasal.svg"id="logoMeroPasal"/>
+            <h1 class="bar-heading">MeroPasal</h1>
+          </a>
+        </div>
+        <div class="barright">
+          <form class="search-form" id="formSearch">
+            <input type="text" id="searchBox" placeholder="search for products..." />
+            <button id="searchbtn" type="submit">
+              <i class="fa fa-search"></i>
+            </button>
+          </form>
+          <div id="viewCartItems">
+            <a href="viewCartPage.html" id="viewCartItems-link">
+              <i class="fa fa-shopping-cart" title="view your items in the cart"></i>
+            </a>
+            <span id="cartItemQuantity"></span>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <section id="belowNavbar">
+      <banner id="slideshow-container">
+        <div class="carousel">
+            <div id="gallery-slides">
+                <img src="./images/banner/slide1.jpg" alt="slide1" class="slides" style="display:block"/>
+                <img src="./images/banner/slide2.jpg" alt="slide1" class="slides"/>
+                <img src="./images/banner/slide3.jpg" alt="slide1" class="slides" />
+                <img src="./images/banner/slide4.jpg" alt="slide1" class="slides"/>
+            </div>
+            <div class="direction-container">
+                <div id="direction-left" class="direction" onclick="directLeft_click()"> &blacktriangleleft; </div>
+                <div id="direction-right" class="direction" onclick="directRight_click()"> &blacktriangleright; </div>
+            </div>
+        </div>
+        
+        <div class="controls">
+            <span class="dots active"></span>
+            <span class="dots"></span>
+            <span class="dots"></span>
+            <span class="dots"></span>
+        </div>
+      </banner>
+
+      <section id="popularItems" class="sectionOfItems">
+        <h1 class="sectionItemsHeader">Most Popular Items</h1>
+        <div class="itemsWrapper">
+
+          <div class="items">
+            <div class="image-div">
+              <img class="itemImage" src="./images/shoes1.jpg" alt="shoes1" />
+            </div>
+            <div class="description">
+              <h3 class="product-name">Shoes s1</h3>
+              <p>Rs. 2500</p>
+            </div>
+            <div class="itemBtns">
+              <button class="addToCart btn">Add to Cart</button>
+              <button class="itemDetails btn">Details</button>
+            </div>
+          </div>
+
+          <div class="items">
+            <div class="image-div">
+              <img class="itemImage" src="./images/shirts1.jpg" alt="shirts1" />
+            </div>
+            <div class="description">
+              <h3 class="product-name">Shirt s1</h3>
+              <p>Rs. 1500</p>
+            </div>
+            <div class="itemBtns">
+              <button class="addToCart btn">Add to Cart</button>
+              <button class="itemDetails btn">Details</button>
+            </div>
+          </div>
+
+          <div class="items">
+            <div class="image-div">
+              <img class="itemImage" src="./images/glasses1.jpg" alt="glasses1" />
+            </div>
+            <div class="description">
+              <h3 class="product-name">Rayban r1</h3>
+              <p>Rs. 2000</p>
+            </div>
+            <div class="itemBtns">
+              <button class="addToCart btn">Add to Cart</button>
+              <button class="itemDetails btn">Details</button>
+            </div>
+          </div>
+
+          <div class="items">
+            <div class="image-div">
+              <img class="itemImage" src="./images/pants1.jpg" alt="pant1" />
+            </div>
+            <div class="description">
+              <h3 class="product-name">Pants p1</h3>
+              <p>Rs. 2500</p>
+            </div>
+            <div class="itemBtns">
+              <button class="addToCart btn">Add to Cart</button>
+              <button class="itemDetails btn">Details</button>
+            </div>
+          </div>
+
+          <div class="items">
+            <div class="image-div">
+              <img class="itemImage" src="./images/shoes2.jpg"alt="shoes2" />
+            </div>
+            <div class="description">
+              <h3 class="product-name">Puma p1</h3>
+              <p>Rs. 2500</p>
+            </div>
+            <div class="itemBtns">
+              <button class="addToCart btn">Add to Cart</button>
+              <button class="itemDetails btn">Details</button>
+            </div>
+          </div>
+
+          <div class="items">
+            <div class="image-div">
+              <img class="itemImage" src="./images/jackets1.jpg" alt="jackets1" />
+            </div>
+            <div class="description">
+              <h3 class="product-name">Jacket j1</h3>
+              <p>Rs. 3500</p>
+            </div>
+            <div class="itemBtns">
+              <button class="addToCart btn">Add to Cart</button>
+              <button class="itemDetails btn">Details</button>
+            </div>
+          </div>
+
+          <div class="items">
+            <div class="image-div">
+              <img class="itemImage" src="./images/glasses2.jpg" alt="glasses2" />
+            </div>
+            <div class="description">
+              <h3 class="product-name">rayban r2</h3>
+              <p>Rs. 2000</p>
+            </div>
+            <div class="itemBtns">
+              <button class="addToCart btn">Add to Cart</button>
+              <button class="itemDetails btn">Details</button>
+            </div>
+          </div>
+
+          <div class="items">
+            <div class="image-div">
+              <img class="itemImage" src="./images/pants2.jpg"alt="pants2" />
+            </div>
+            <div class="description">
+              <h3>Pant p2</h3>
+              <p>Rs. 2500</p>
+            </div>
+            <div class="itemBtns">
+              <button class="addToCart btn">Add to Cart</button>
+              <button class="itemDetails btn">Details</button>
+            </div>
+          </div>
+
+          <div class="items">
+            <div class="image-div">
+              <img class="itemImage" src="./images/pants3.jpg" alt="pants3" />
+            </div>
+            <div class="description">
+              <h3>pant p3</h3>
+              <p>Rs. 2500</p>
+            </div>
+            <div class="itemBtns">
+              <button class="addToCart btn">Add to Cart</button>
+              <button class="itemDetails btn">Details</button>
+            </div>
+          </div>
+
+          <div class="items">
+            <div class="image-div">
+              <img class="itemImage" src="./images/shoes3.jpg" alt="shoes3" />
+            </div>
+            <div class="description">
+              <h3>Shoes s3</h3>
+              <p>Rs. 2500</p>
+            </div>
+            <div class="itemBtns">
+              <button class="addToCart btn">Add to Cart</button>
+              <button class="itemDetails btn">Details</button>
+            </div>
+          </div>
+
+          <div class="items">
+            <div class="image-div">
+              <img class="itemImage" src="./images/shoes4.jpg" alt="shoes4" />
+            </div>
+            <div class="description">
+              <h3>Shoes s4</h3>
+              <p>Rs. 2500</p>
+            </div>
+            <div class="itemBtns">
+              <button class="addToCart btn">Add to Cart</button>
+              <button class="itemDetails btn">Details</button>
+            </div>
+          </div>
+
+          <div class="items">
+            <div class="image-div">
+              <img class="itemImage" src="./images/jackets2.jpg" alt="jacket" />
+            </div>
+            <div class="description">
+              <h3>Jacket j2</h3>
+              <p>Rs. 3500</p>
+            </div>
+            <div class="itemBtns">
+              <button class="addToCart btn">Add to Cart</button>
+              <button class="itemDetails btn">Details</button>
+            </div>
+          </div>
+
+          <div class="items">
+            <div class="image-div">
+              <img class="itemImage" src="./images/glasses3.jpg" alt="glasses3" />
+            </div>
+            <div class="description">
+              <h3>Rayban r3</h3>
+              <p>Rs. 2000</p>
+            </div>
+            <div class="itemBtns">
+              <button class="addToCart btn">Add to Cart</button>
+              <button class="itemDetails btn">Details</button>
+            </div>
+          </div>
+
+          <div class="items">
+            <div class="image-div">
+              <img class="itemImage" src="./images/pants4.jpg" alt="pants4" />
+            </div>
+            <div class="description">
+              <h3>Pant p4</h3>
+              <p>Rs. 2500</p>
+            </div>
+            <div class="itemBtns">
+              <button class="addToCart btn">Add to Cart</button>
+              <button class="itemDetails btn">Details</button>
+            </div>
+          </div>
+
+          <div class="items">
+            <div class="image-div">
+              <img class="itemImage" src="./images/jackets3.jpg"alt="jackets3" />
+            </div>
+            <div class="description">
+              <h3>Jacket j3</h3>
+              <p>Rs. 2500</p>
+            </div>
+            <div class="itemBtns">
+              <button class="addToCart btn">Add to Cart</button>
+              <button class="itemDetails btn">Details</button>
+            </div>
+          </div>
+
+          <div class="items">
+            <div class="image-div">
+              <img class="itemImage" src="./images/glasses5.jpg"alt="glasses5" />
+            </div>
+
+            <div class="description">
+              <h3>Rayban r5</h3>
+              <p>Rs. 2500</p>
+            </div>
+            <div class="itemBtns">
+              <button class="addToCart btn">Add to Cart</button>
+              <button class="itemDetails btn">Details</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="recentItems" class="sectionOfItems">
+        <h1 class="sectionItemsHeader">Recently arrived Items</h1>
+        <div class="itemsWrapper">
+
+          <div class="items">
+            <div class="image-div">
+              <img class="itemImage" src="./images/shirts2.jpg" alt="shirts2"/>
+            </div>
+            <div class="description">
+              <h3>Shirt s2</h3>
+              <p>Rs. 2500</p>
+            </div>
+            <div class="itemBtns">
+              <button class="addToCart btn">Add to Cart</button>
+              <button class="itemDetails btn">Details</button>
+            </div>
+          </div>
+
+          <div class="items">
+            <div class="image-div">
+              <img class="itemImage" src="./images/shirts3.jpg" alt="shirts3" />
+            </div>
+            <div class="description">
+              <h3>Shirt s1</h3>
+              <p>Rs. 1500</p>
+            </div>
+            <div class="itemBtns">
+              <button class="addToCart btn">Add to Cart</button>
+              <button class="itemDetails btn">Details</button>
+            </div>
+          </div>
+
+          <div class="items">
+            <div class="image-div">
+              <img class="itemImage" src="./images/glasses1.jpg" alt="glasses1" />
+            </div>
+            <div class="description">
+              <h3>Rayban r1</h3>
+              <p>Rs. 2000</p>
+            </div>
+            <div class="itemBtns">
+              <button class="addToCart btn">Add to Cart</button>
+              <button class="itemDetails btn">Details</button>
+            </div>
+          </div>
+
+          <div class="items">
+            <div class="image-div">
+              <img class="itemImage" src="./images/shirts1.jpg" alt="shirts1"/>
+            </div>
+            <div class="description">
+              <h3>Shirt s1</h3>
+              <p>Rs. 2500</p>
+            </div>
+            <div class="itemBtns">
+              <button class="addToCart btn">Add to Cart</button>
+              <button class="itemDetails btn">Details</button>
+            </div>
+          </div>
+
+          <div class="items">
+            <div class="image-div">
+              <img class="itemImage" src="./images/shoes1.jpg" alt="shoes1"/>
+            </div>
+            <div class="description">
+              <h3>Shoes s1</h3>
+              <p>Rs. 2500</p>
+            </div>
+            <div class="itemBtns">
+              <button class="addToCart btn">Add to Cart</button>
+              <button class="itemDetails btn">Details</button>
+            </div>
+          </div>
+
+          <div class="items">
+            <div class="image-div">
+              <img class="itemImage" src="./images/jackets1.jpg" alt="jackets1" />
+            </div>
+            <div class="description">
+              <h3>Jacket j1</h3>
+              <p>Rs. 3500</p>
+            </div>
+            <div class="itemBtns">
+              <button class="addToCart btn">Add to Cart</button>
+              <button class="itemDetails btn">Details</button>
+            </div>
+          </div>
+
+          <div class="items">
+            <div class="image-div">
+              <img class="itemImage" src="./images/glasses5.jpg"alt="glasses5" />
+            </div>
+
+            <div class="description">
+              <h3>Rayban r5</h3>
+              <p>Rs. 2500</p>
+            </div>
+            <div class="itemBtns">
+              <button class="addToCart btn">Add to Cart</button>
+              <button class="itemDetails btn">Details</button>
+            </div>
+          </div>
+
+          <div class="items">
+            <div class="image-div">
+              <img class="itemImage" src="./images/pants3.jpg" alt="pants3" />
+            </div>
+            <div class="description">
+              <h3>pant p3</h3>
+              <p>Rs. 2500</p>
+            </div>
+            <div class="itemBtns">
+              <button class="addToCart btn">Add to Cart</button>
+              <button class="itemDetails btn">Details</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <footer id="footer">
+        <div class="footer-items">
+          <div>
+            <h3 class="footer-head">Customer Services</h3>
+            <p><a href="./contact.html" target="_blank" class="footer-link">Contact us</a></p>
+            <p><a href="./contact.html" target="_blank" class="footer-link">Report Abuse</a></p>
+          </div>
+          <div>
+            <h3 class="footer-head">About Us</h3>
+            <p><a href="#" target="_blank" class="footer-link">About MeroPasal.com</a></p>
+          </div>
+          <div>
+            <h3 class="footer-head">Follow us on</h3>
+            <div class="social-medias">
+              <a href="https://www.facebook.com" target="_blank" class="social-medias-link"><i class="fab fa-facebook-square"></i> </a>
+              <a href="https://twitter.com" target="_blank" class="social-medias-link" ><i class="fab fa-twitter-square"></i></a>
+              <a href="https://www.youtube.com" target="_blank" class="social-medias-link" ><i class="fab fa-youtube-square"></i></a>
+              <a href="https://www.instagram.com" target="_blank" class="social-medias-link" ><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="copyrightMessage">
+          &COPY; 2018 MeroPasal.com All rights reserved
+        </div>
+    </footer>
+
+  </div>
+
+  <!-- loader -->
+  <!-- <div id="loader"></div> -->
+
+  <script src="./js/index.js" type="module"> </script>
+  <script>
+    let navElements = document.querySelectorAll('.nav-link');
+    function active_click(n){
+        /* console.log('clicked'); */
+        navElements.forEach(nav => {
+            nav.className="nav-link";
+        });
+        navElements[n].className = "nav-link active";  
+    }
+  </script>
+  <script src="./js/jsImport/carousel.js">  </script>
+  <!-- <script src="./js/jsImport/loader.js">  </script> -->
+</body>
+
+</html>

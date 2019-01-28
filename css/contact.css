@@ -1,0 +1,38 @@
+/* @import 'cssImport/wrapperLoader.css'; */
+
+@import 'cssImport/nav.css';
+@import 'cssImport/btn.css';
+@import 'cssImport/form.css';
+@import 'cssImport/errorSuccess.css';
+@import 'cssImport/footer.css';
+
+
+#messageTextBox{
+    height:15vh;
+}
+
+#contactSubmit{
+    width:80px;
+    height:30px;
+    font-size:18px;
+}
+
+
+/* styling maps */
+#map{
+    /* border:1px solid yellow; */
+    margin:20px 0;
+}
+#map-heading,#socialSites-heading{
+    margin:30px 0;
+    /* border:1px solid black; */
+}
+#mapbox{
+    width:60vw;
+    min-width:300px;
+    height:50vh;
+}
+
+
+
+

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Login - mero pasal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- favicon -->
+  <link rel="shortcut icon" type="image/x-icon" href="./images/favicon/favicon.ico" />
+  <!-- external css -->
+  <link rel="stylesheet" type="text/css" media="screen" href="./css/login.css" />
+  <!-- font awesome icons -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+    crossorigin="anonymous" />
+</head>
+
+<body>
+  <div id="wrapper">
+    <header id="header">
+      <!-- navbar -->
+      <nav id="navbar">
+        <div class="left">
+          <a href="index.html" class="nav-link">
+            <i class="fa  fa-home"></i> Home</a>
+          <a href="viewCartPage.html" class="nav-link">
+            <i class="fa fa-cart-plus"></i> View Cart 
+          </a>
+          <a href="contact.html" class="nav-link">
+            <i class="fa fa-phone"> </i> Contact</a>
+        </div>
+        <div class="right">
+          <a href="#" class="nav-link active">
+            <i class="fas fa-key"></i> Login</a>
+          <a href="registration.html" class="nav-link">
+            <i class="fas fa-user"></i> Registration</a>
+        </div>
+      </nav>
+    </header>
+    <section id="container">
+      <section class="sectionform">
+        <h1 class="form-heading">Grab your products in the <a href="viewCartPage.html">
+            <i class="fa fa-shopping-cart" title="view your items in the cart"></i>
+          </a> ?</h1>
+        <form id="form">
+          <div class="form-div">
+            <label for="emailTextBox" class="formleft">Email</label>
+            <input type="text" id="emailTextBox" class="formright" placeholder="@gmail.com" required autofocus/>
+          </div>
+
+          <div class="form-div">
+            <label for="passwordTextBox" class="formleft">Password</label>
+            <input type="password" id="passwordTextBox" class="formright" required />
+          </div>
+
+          <div class="form-div">
+            <div></div>
+            <div id="forgotpassword-div">
+              <a href="#" id="forgotpasswordLink">Forgot password?</a>
+            </div>
+          </div>
+
+          <div class="form-div">
+            <div></div>
+            <div id="loginBtn-div">
+              <button class="btn" id="loginbtn">Login</button>
+            </div>
+          </div>
+
+          <div class="form-div">
+            <div></div>
+            <div id="rememberMe">
+              <label for="checkboxRememberMe">Remember Me</label>
+              <input type="checkbox" id="checkboxRememberMe" />
+            </div>
+          </div>
+
+        </form>
+      </section>
+    </section>
+
+    <footer id="footer">
+      <div class="footer-items">
+        <div>
+          <h3 class="footer-head">Customer Services</h3>
+          <p>
+            <a href="./contact.html" target="_blank" class="footer-link">Contact us</a>
+          </p>
+          <p>
+            <a href="./contact.html" target="_blank" class="footer-link">Report Abuse</a>
+          </p>
+        </div>
+        <div>
+          <h3 class="footer-head">About Us</h3>
+          <p>
+            <a href="#" target="_blank" class="footer-link">About MeroPasal.com</a>
+          </p>
+        </div>
+        <div>
+          <h3 class="footer-head">Follow us on</h3>
+          <div class="social-medias">
+            <a href="https://www.facebook.com" target="_blank" class="social-medias-link">
+              <i class="fab fa-facebook-square"></i>
+            </a>
+            <a href="https://twitter.com" target="_blank" class="social-medias-link">
+              <i class="fab fa-twitter-square"></i>
+            </a>
+            <a href="https://www.youtube.com" target="_blank" class="social-medias-link">
+              <i class="fab fa-youtube-square"></i>
+            </a>
+            <a href="https://www.instagram.com" target="_blank" class="social-medias-link">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="copyrightMessage">
+        &COPY; 2018 MeroPasal.com All rights reserved
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- <div id="loader"></div> -->
+  <script src="./js/login.js" type="module">
+  </script>
+</body>
+
+</html>

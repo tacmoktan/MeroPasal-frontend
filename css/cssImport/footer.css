@@ -1,0 +1,42 @@
+/* footer styles below */
+#footer{
+    background:rgb(119, 1, 1);   
+    display:grid;
+    padding:20px;
+    margin-top:25px;
+}
+.footer-items{
+    display:grid;
+    justify-items: center;
+    grid-template-columns:repeat(3,1fr);
+}
+.footer-head{
+    margin-bottom:5px;
+    color:rgba(255, 255, 255, 0.842);
+}
+.footer-link{
+    color:rgba(255, 255, 255, 0.842);
+    font-size:13px;
+    text-decoration:none;
+}
+.footer-link:hover{
+    text-decoration:underline;
+}
+.social-medias-link i{
+    font-size:25px;
+    color:rgba(255, 255, 255, 0.842);
+    transition:0.3s ease;
+}
+.social-medias-link i:hover{
+    color:rgba(0, 0, 0, 0.842);
+}
+.social-medias-link{
+    text-decoration:none;
+}
+
+.copyrightMessage{
+    margin:10px;
+    font-size:13px;
+    text-align:center;
+    color:rgba(255, 255, 255, 0.842);
+}

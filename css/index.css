@@ -1,0 +1,47 @@
+/* @import 'cssImport/wrapperLoader.css'; */
+
+@import 'cssImport/nav.css';
+@import 'cssImport/searchBox.css';
+@import 'cssImport/carousel.css';
+@import 'cssImport/btn.css';
+@import 'cssImport/footer.css';
+@import 'cssImport/itemsWrapper.css'; /* styling items */
+
+/* index.html styles */
+
+#belowNavbar{
+    display:grid;
+}
+
+.sectionOfItems{
+    display:grid;
+    justify-items:center;
+    margin:20px 0;
+    width:100%;
+    background:whitesmoke;
+}
+/* latest edit start*/
+.addToCart.btn.active{
+    background:rgb(216, 9, 9);
+}
+/* latest edit end */
+/*
+#popularItems{
+    border:2px solid blue;
+}
+ #recentItems{
+    border:2px solid green;
+} */
+
+.sectionItemsHeader{
+    background:rgba(0, 0, 0, 0.493);
+    color:rgba(255, 255, 255, 0.842);
+    margin:10px;
+    padding:10px;
+    border-radius:10px;
+    box-shadow:0 0 20px rgba(0, 0, 0, 0.493);
+    /* border:1px solid black; */
+}
+
+
+
